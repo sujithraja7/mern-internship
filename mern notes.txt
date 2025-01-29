@@ -1,0 +1,241 @@
+6th jan 2025
+folder content nd handson
+
+
+
+title Js promises it us Js object success-resloveed rejected-failure
+
+write a promise called Andhra-bp distance Andhra to A - 5000ms B-2000ms  c-1000ms 
+expected output is c-reached b-reached a reached build the code with promise and functions use call back then with set timeout
+
+
+
+CMD    C:\Users\Lenovo\Desktop\Intern\react>
+
+
+st1 : create a folder
+st2 : go to open cmd prompt easily go to top address bar change path to cmd enter
+st3 : check the version by node -v (check node got installed or not)  npm -v(check v of npm)
+st4 : creating react app using command npx create-react-app (app name)
+st5 :  npm start(to strt)    
+st6 : two imp folders in react (public and source) 
+st7 : 3 imp files (index.html index.js index.css)
+note [dont touch index files]
+note[do initialy code or write ur code in app.js]
+REACT FOLLOWS VDOM unlike html once DOM get created the changes are the manipulation what we do gets completed and only that part will be rerendered
+where as in HTML every time we make change entire dom will be rerendered 
+st 8 : in eb application created by reactjs each and everything is called as components
+types of component - functional nd class component
+ 
+
+vroc snd stay 
+vrocs iy wont change it changes or we can change water lvl in bottle 
+initial state full 
+\updated state half 
+current stae empty
+
+
+
+flipkart website
+home page grocessory mobile fashion
+
+
+
+two states -initial state passing values, updated state- its a function
+arrow function is used the most
+use state - takes one argument initial state that can be anything 
+x=100 assign the value of 100 is x it assign both value 
+we can update the count value state using function "updatecount"
+
+
+use effect going by multiple things
+
+
+i have 5 components name them as c1 c2 c3 c4 c5 ,c1 one props name hi it should be in c5 too 
+
+
+
+whenever we are using something inside curly brace it can be either js object or react component
+
+
+props export ku kila return ku mela
+
+ props can be passed between components only by following the key which means parent to child
+ to overcome this in terms of efficiency we are using hooks
+
+
+
+USE CONCEPT HOOKS
+
+if we want to use state from one component to another only way to achieve is passing it as props in the key
+this is not efficient to make this efficient 
+we have an exclusive hook called useContext
+
+
+first component app
+second  component container
+third users
+
+add a state called theme initial - "light"
+
+use context without following the key passing state from one state to another component in an efficient way using the hook
+
+-create context (app)- use in user.js 
+-use context
+
+in the given example create context in app component and that will be used in user component using use context
+
+
+after the action monitoring or seeing the side effects happening in the functional components is possible using use effect hooks
+
+use effect definition - after a action monitering checking the side effect is using use effect
+
+innerhtml is bad usage we should  not use it in big projects
+-call back 
+-dependencyarray is the two functions
+
+
+
+use reducer same as usestae use to manage or update state that is data values of the component
+
+-create inc dec program using usestate
+-replace ysestate with use reducer
+
+it takes two argument 
+-reducer function which says what we want to say like(+ or -)
+-initial value of the state.
+
+it returns an array with two values
+
+first value is initial count
+second is dispatch function.
+
+we call them as state and dispatch
+
+first is initial count  and second is dispatch func
+we call it is  a state and dispatch
+the state will hold intial value and updated  once u call dispatch function and dispatch will trigger  the use reducer function 
+
+display the componenet login granted  if pass is incorrect display access denied contact
+
+ redux store the components in individuals
+slice divide into two 
+action - increment and decrement
+reducer func - reducer
+
+ npm i @reduxjs/toolkit react-redux  it is  path to install redux
+it is used  to connect react component in the redux
+npm i react-router-dom 
+types of route
+router
+routers
+route
+create using routing
+home,user,about,contact
+create two folder  app  and slices
+app represt store
+slices represt  slices
+user info is the key for reducer and usereducer is the name we give for reducer actions we get from userslice.js
+state is reducer userinfo from store users from slice
+state is callback 
+mangodb 
+it is  no sql  toprocess unstructured data to accesses json data 
+json file look like java script object its look like  object both are same but not  same component
+ compass 
+it help to fetch data  from mg db server  it act as client
+
+mongosh
+the mg shell is replace by mongosh
+interactive environment  run query
+
+ data modeling
+two term are imp
+data modeling = it is fix structure of ur data planning the structure  ex name,salary,pwd
+schema = it is the actual blueprint of db which is created by fixing the format using data modelling name string ,salary float
+ group of document is collection
+ use database name
+show dbs
+db.emp.insertOne({empname:"Naren"}) to insert value
+db.emp.find()
+
+create db computer
+collection name laptops
+name model color status = available and not available minimum 10 record  change its staus to 
+vendor=object
+vname vprice
+
+
+nin comment is used to s
+and two to be same
+or one to true
+
+
+
+create a database bank
+create two collection
+customerpersonal = name s , address a ,phonenum object two num one and two age
+customeraccount = acc no  branch str bankname str ifc str currentbalance  float acc type saving and current
+ od yes or no
+
+node is a backend library from js in node we can use express js as middleware
+
+=========================================================================================================================================
+require from node js  -helps to include modules in our code below example custom module
+
+const http = require("http");
+const express = requires('express');
+ custom module
+=====================================================================
+ run time env  to allow in server side 
+note
+maintain split terminal in order to use client and server 
+run command
+start server  = node server .js   // run client npm start 
+to install expresss  npm i express  
+server always  gives in json to activate we listen command it is ude to actvate 
+  to do when error is like react script miss we can delete packag .json to get it back the 
+//comment npm init -y       server console will be under the ter
+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+const express=require("express")
+//create an instance of an express applicationapplication
+//used for routing middleware management and many reason
+// to keep routing clean
+const app=express()
+const port=2001
+// used for port number
+app.get('/',(req,res)=>{
+    //difine a rpute for the http to getrequest to the root url('/')
+    //req represent the request object and res represent the response object means browser asking the server(it request) to give msg from hello node json get(req,res) here req belongs to client  and res belogs to server
+// app.get send response 
+    res.send('Hello World!')
+})
+app.listen(port,()=>{
+// log a message indicating that ther server is running and provide url to access it 
+    console.log(`Server is running at http://localhost:${port}`)
+})
+
+
+axuse famous library it is used to make http request from the client and server
+axuse is known for easy and clear syntax also flexibility expescally work well with api and rest api's 
+when we run aapi for exclusive purpose is called rest api
+corse =  corse orgin resource sharing   it is from express  ,when the web page request information from resource {from any other size} whether to accept the request and process it or not  will  e defined in the notebook  for this purpose  we use crose
+comments to install npm i corse
+npm i axuse
+******************************************************************************************************************************************
+in the given example we are getting request from server using data component .js as client as using http  get method via api/data
+server respond as json
+fromthe json file i ewant to filter only the msg so we are using cors  respond ,data . msg 
+==========================================================================================================================================
+
+3 files 
+inside src
+Users.js
+Createuser.js
+Updateuser.js
+model name age email button=add user
+dependency  router axius express expresscors
+app .js routing components
+++++++++++++++++++++++++++++++++++++++++=mongodb://localhost:27017/+++++++++++++++++++++=
+emp id emp name emp salary empcontact
+
+
