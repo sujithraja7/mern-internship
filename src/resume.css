@@ -1,0 +1,46 @@
+
+/* Container styling */
+div {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+  }
+  
+  /* Heading styling */
+  #resume {
+    text-align: center;
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #f6efef;
+    margin-bottom: 20px;
+  }
+  
+  /* Paragraph and link styling */
+  p {
+    text-align: center;
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #f6f7ef;
+  }
+  
+  a {
+    text-decoration: none;
+    color: blue;
+    font-weight: bold;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+    color: darkblue;
+  }
+  
+  /* Image styling */
+  img {
+    display: block;
+    margin: 20px auto;
+    max-width: 100%;
+    height: auto;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+  }
+  

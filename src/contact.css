@@ -1,0 +1,30 @@
+.contact-section {
+    padding: 20px;
+    line-height: 1.6;
+  }
+  
+  .contact-heading {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+  }
+  
+  .contact-item {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .contact-link {
+    text-decoration: none;
+    color: blue;
+    text-align: left;
+  }
+  .contact{
+    text-align: left;
+  }
+  .mail{
+    margin-left: 10px;
+    color: blue;
+    text-decoration: none;
+    text-align: left;
+  }
+  

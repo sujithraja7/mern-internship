@@ -1,0 +1,104 @@
+/* General container styling */
+.projects-container {
+  padding: 40px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: linear-gradient(135deg, #100e11, #0e0e0e);
+  min-height: 100vh;
+  color: #050505;
+}
+
+/* Title styling */
+.projects-title {
+  font-size: 3em;
+  text-align: center;
+  color: #f7f6f6;
+  margin-bottom: 40px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.projects-title::after {
+  content: "";
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(to right, #0073e6, #ff66cc);
+  display: block;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Projects grid */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 30px;
+  padding: 0 20px;
+}
+
+/* Individual project card */
+.project-card {
+  background: linear-gradient(145deg, #08d7e6, #dcdfe3);
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px #64f5d3, -10px -10px 20px #ffffff;
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+  position: relative;
+}
+
+.project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 12px 12px 24px rgba(0, 0, 0, 0.2), -12px -12px 24px rgba(255, 255, 255, 0.8);
+}
+
+/* Project title */
+.project-title {
+  font-size: 1.8em;
+  font-weight: 600;
+  color: #0073e6;
+  margin-bottom: 15px;
+}
+
+/* Description */
+.project-description {
+  font-size: 1em;
+  color: #4a4a4a;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+/* Technologies section */
+.project-technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.technology-tag {
+  background: linear-gradient(to right, #0073e6, #ff66cc);
+  color: white;
+  font-size: 0.9em;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.technology-tag:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+  .projects-title {
+    font-size: 2.5em;
+  }
+
+  .project-card {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,34 @@
+body{
+    background-color: black;
+}
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem;
+  }
+  div.her{
+    background-color: #db1b1b;
+  }
+  .hero-text {
+    flex: 1;
+    color: aqua;
+  }
+  
+  .hero-text h1 {
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: aqua;
+  }
+  
+  .hero-text .role {
+    color: #00c853;
+    font-size: 1.5rem;
+    color: aqua;
+    
+  }
+  #hello{
+    font-size: 3rem;
+    margin: 0.5rem 0;
+    color: aqua;
+  }
